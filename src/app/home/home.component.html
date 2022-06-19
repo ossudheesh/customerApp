@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="mx-5 navbar-brand" href="#"><i class="bi bi-people-fill mx-2"></i>Customer Manager</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="m-3 collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <button class="home-button bg-dark" (click)="customer()">Customers</button>
+            </li>
+            <li class="nav-item">
+                <button class="home-button bg-dark" (click)="orders()">Orders</button>
+            </li>
+            <li class="nav-item">
+                <button class="home-button bg-dark" (click)="about()">About</button>
+            </li>
+            <li class="nav-item">
+                <button class="home-button bg-dark" (click)="login()">Login</button>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div *ngIf="c" class="row">
+    <app-customers></app-customers>
+</div>
+<div *ngIf="o" class="row">
+    <app-orders></app-orders>
+</div>
+<div *ngIf="a" class="row">
+    <app-about></app-about>
+</div>
+<div *ngIf="l" class="row">
+    <app-login></app-login>
+</div>
+
+
+
+

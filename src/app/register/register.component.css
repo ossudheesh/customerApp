@@ -1,0 +1,17 @@
+.reg-form{
+    width:auto;
+    float: right;
+
+}
+/* :host { */
+    /* display: grid; */
+    /* justify-content: right; */
+    /* align-items: center; */
+    /* background-color: yellow; */
+    /* position: relative; */
+    /* top: 100em; */
+    /* left: 100px; */
+    /* height: 1000em;
+    width: 20em; */
+    /* box-shadow: 0 0 5px rgb(0, 0, 0, 0.27); */
+/* } */

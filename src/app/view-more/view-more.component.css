@@ -1,0 +1,8 @@
+.edit-button {
+    position: absolute;
+    right: 10px;
+    top:8px;
+    border: none;
+    background-color: none;
+    /* padding: 10px; */
+}

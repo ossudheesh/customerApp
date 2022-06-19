@@ -1,0 +1,43 @@
+<div class="reg-form">
+  <h1>New Customer</h1>
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <div class="form-group">
+      <label for="fname">First Name</label>
+      <input type="text" class="form-control" id="fname" formControlName="fname" placeholder="First Name">
+      <div class="mb-3" style="color:red"
+        *ngIf="(this.registerForm.get('fname')?.touched)&&(this.registerForm.get('fname')?.dirty)&&(this.registerForm.get('fname')?.errors)">
+        *Required (Alphabets Only)</div>
+    </div>
+    <div class="form-group">
+      <label for="lname">Last Name</label>
+      <input type="text" class="form-control" id="lname" formControlName="lname" placeholder="Last Name">
+      <div class="mb-3" style="color:red"
+        *ngIf="(this.registerForm.get('lname')?.touched)&&(this.registerForm.get('lname')?.dirty)&&(this.registerForm.get('lname')?.errors)">
+        *Required (Alphabets Only)</div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" formControlName="email" placeholder="Email">
+      <div class="mb-3" style="color:red"
+        *ngIf="(this.registerForm.get('email')?.touched)&&(this.registerForm.get('email')?.dirty)&&(this.registerForm.get('email')?.errors)">
+        Invalid Email</div>
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" formControlName="city" placeholder="City">
+      <div class="mb-3" style="color:red"
+        *ngIf="(this.registerForm.get('city')?.touched)&&(this.registerForm.get('city')?.dirty)&&(this.registerForm.get('city')?.errors)">
+        *Required (Alphabets Only)</div>
+    </div>
+    <div class="mb-3 form-group">
+      <label for="address">Address</label>
+      <input type="text" class="form-control" id="address" formControlName="address" placeholder="Address">
+      <div class="mb-3" style="color:red"
+        *ngIf="(this.registerForm.get('address')?.touched)&&(this.registerForm.get('address')?.dirty)&&(this.registerForm.get('address')?.errors)">
+        *Required (Alphabets Only)</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" mat-button mat-dialog-close >Submit</button>
+    <button class="btn btn-danger mx-2" mat-button mat-dialog-close>Cancel</button>
+  </form>
+</div>

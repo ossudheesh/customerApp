@@ -1,0 +1,41 @@
+.img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.person-name {
+    width: auto;
+    color: aliceblue;
+}
+
+.edit-button {
+    position: absolute;
+    right: 10px;
+    top:8px;
+    color: white;
+    border: none;
+    /* padding: 10px; */
+}
+.filter-form{
+    float: right;
+}
+.button-more{
+    border: none;
+    background-color: white;
+    color: blue;
+}
+.table-head{
+    color: white;
+}
+td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  th{
+        text-align: center;
+        vertical-align: middle;
+  }
+.view-button{
+    border: none;
+}
+
